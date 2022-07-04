@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'au-beginner';
+
+  data = {
+    title:'Angular Core Deep Dive'
+  };
+
+  onLogoClicked(){
+    alert('Hello world')
+  };
+
+  onKeyUp(newTitle:string){
+    this.data.title = newTitle;
+  };
 }
